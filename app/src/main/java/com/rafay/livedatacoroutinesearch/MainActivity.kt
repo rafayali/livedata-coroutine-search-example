@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.rafay.livedatacoroutinesearch.databinding.ActivityMainBinding
-import com.rafay.livedatacoroutinesearch.search.MethodOneActivity
-import com.rafay.livedatacoroutinesearch.search.MethodTwoActivity
+import com.rafay.livedatacoroutinesearch.search.CoroutineScopeActivity
+import com.rafay.livedatacoroutinesearch.search.CompletableDifferedActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,13 +18,13 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         binding.buttonMethodOne.setOnClickListener {
-            Intent(this, MethodOneActivity::class.java).also {
+            Intent(this, CoroutineScopeActivity::class.java).also {
                 startActivity(it)
             }
         }
 
         binding.buttonMethodTwo.setOnClickListener {
-            Intent(this, MethodTwoActivity::class.java).also {
+            Intent(this, CompletableDifferedActivity::class.java).also {
                 startActivity(it)
             }
         }

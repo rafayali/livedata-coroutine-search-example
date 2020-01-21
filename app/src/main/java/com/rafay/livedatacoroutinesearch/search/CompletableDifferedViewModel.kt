@@ -10,7 +10,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
-class MethodTwoViewModel : ViewModel() {
+class CompletableDifferedViewModel : ViewModel() {
 
     private val randomUserApi = RetrofitApi().randomUsers
 

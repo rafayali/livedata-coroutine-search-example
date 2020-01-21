@@ -2,7 +2,6 @@ package com.rafay.livedatacoroutinesearch.search
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.SearchView
 import androidx.core.widget.doOnTextChanged
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -10,21 +9,20 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rafay.livedatacoroutinesearch.R
 import com.rafay.livedatacoroutinesearch.SearchAdapter
-import com.rafay.livedatacoroutinesearch.databinding.ActivityMethodOneBinding
-import com.rafay.livedatacoroutinesearch.databinding.ActivityMethodTwoBinding
+import com.rafay.livedatacoroutinesearch.databinding.ActivityCompleteableDifferedBinding
 
-class MethodTwoActivity : AppCompatActivity() {
+class CompletableDifferedActivity : AppCompatActivity() {
 
     private val viewModel by lazy {
-        ViewModelProvider(this).get(MethodTwoViewModel::class.java)
+        ViewModelProvider(this).get(CompletableDifferedViewModel::class.java)
     }
 
-    private lateinit var binding: ActivityMethodTwoBinding
+    private lateinit var binding: ActivityCompleteableDifferedBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_method_two)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_completeable_differed)
 
         setupRecyclerView()
 

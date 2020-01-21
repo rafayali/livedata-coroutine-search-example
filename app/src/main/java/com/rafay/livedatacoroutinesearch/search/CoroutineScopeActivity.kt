@@ -11,10 +11,10 @@ import com.rafay.livedatacoroutinesearch.R
 import com.rafay.livedatacoroutinesearch.SearchAdapter
 import com.rafay.livedatacoroutinesearch.databinding.ActivityMethodOneBinding
 
-class MethodOneActivity : AppCompatActivity() {
+class CoroutineScopeActivity : AppCompatActivity() {
 
     private val viewModel by lazy {
-        ViewModelProvider(this).get(MethodOneViewModel::class.java)
+        ViewModelProvider(this).get(CouroutineScopeViewModel::class.java)
     }
 
     private lateinit var binding: ActivityMethodOneBinding

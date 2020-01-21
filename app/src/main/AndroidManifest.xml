@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".search.MethodTwoActivity" android:theme="@style/SearchTheme"/>
-        <activity android:name=".search.MethodOneActivity" android:theme="@style/SearchTheme"/>
+        <activity android:name=".search.CompletableDifferedActivity" android:theme="@style/SearchTheme"/>
+        <activity android:name=".search.CoroutineScopeActivity" android:theme="@style/SearchTheme"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
