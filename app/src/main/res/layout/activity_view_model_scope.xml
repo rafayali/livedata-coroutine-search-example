@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
-        tools:context=".search.CompletableDifferedActivity">
+        tools:context=".search.ViewModelScopeActivity">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -55,7 +55,6 @@
                 android:id="@+id/button_close"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
-                android:layout_marginEnd="8dp"
                 android:background="?attr/actionBarItemBackground"
                 android:src="@drawable/ic_close_black_24dp"
                 app:layout_constraintBottom_toBottomOf="parent"

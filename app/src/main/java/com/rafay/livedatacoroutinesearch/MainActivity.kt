@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import com.rafay.livedatacoroutinesearch.databinding.ActivityMainBinding
 import com.rafay.livedatacoroutinesearch.search.CoroutineScopeActivity
 import com.rafay.livedatacoroutinesearch.search.CompletableDifferedActivity
+import com.rafay.livedatacoroutinesearch.search.ViewModelScopeActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +26,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonMethodTwo.setOnClickListener {
             Intent(this, CompletableDifferedActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.buttonMethodThree.setOnClickListener {
+            Intent(this, ViewModelScopeActivity::class.java).also {
                 startActivity(it)
             }
         }
