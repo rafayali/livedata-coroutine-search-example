@@ -3,11 +3,9 @@ package com.rafay.livedatacoroutinesearch.search
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
-import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.rafay.livedatacoroutinesearch.R
 import com.rafay.livedatacoroutinesearch.SearchAdapter
 import com.rafay.livedatacoroutinesearch.databinding.ActivityCoroutineScopeBinding
 
@@ -22,7 +20,8 @@ class CoroutineScopeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_coroutine_scope)
+        binding = ActivityCoroutineScopeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         setupRecyclerView()
 

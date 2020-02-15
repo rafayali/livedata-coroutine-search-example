@@ -1,45 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_method_three"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewModel Scope"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_method_three"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ViewModel Scope"
-            android:textAllCaps="false"
-            tools:ignore="HardcodedText" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_method_one"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Coroutine Scope"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_method_one"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Custom Coroutine Scope"
-            android:textAllCaps="false"
-            tools:ignore="HardcodedText" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_method_two"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completable Differed"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_method_two"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Completable Differed"
-            android:textAllCaps="false"
-            tools:ignore="HardcodedText" />
-
-    </LinearLayout>
-
-    <data>
-
-    </data>
-
-</layout>
+</LinearLayout>

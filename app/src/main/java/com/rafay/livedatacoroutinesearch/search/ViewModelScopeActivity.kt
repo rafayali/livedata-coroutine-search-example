@@ -1,13 +1,11 @@
 package com.rafay.livedatacoroutinesearch.search
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
-import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.rafay.livedatacoroutinesearch.R
 import com.rafay.livedatacoroutinesearch.SearchAdapter
 import com.rafay.livedatacoroutinesearch.databinding.ActivityViewModelScopeBinding
 
@@ -22,7 +20,8 @@ class ViewModelScopeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_view_model_scope)
+        binding = ActivityViewModelScopeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         setupRecyclerView()
 

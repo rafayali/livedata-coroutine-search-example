@@ -2,7 +2,6 @@ package com.rafay.livedatacoroutinesearch
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -12,12 +11,7 @@ class SearchAdapter : ListAdapter<String, SearchAdapter.SearchViewHolder>(Search
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchViewHolder {
         return SearchViewHolder(
-            DataBindingUtil.inflate(
-                LayoutInflater.from(parent.context),
-                R.layout.item_search,
-                parent,
-                false
-            )
+            ItemSearchBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
     }
 
